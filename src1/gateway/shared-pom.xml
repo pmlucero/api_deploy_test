@@ -1,12 +1,20 @@
-<profile>
-    <id>test</id>
-    <properties>
-        <options>validate</options>
-        <apigee.profile>test</apigee.profile>
-        <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
-        <apigee.apiversion>v1</apigee.apiversion>
-        <apigee.org>\${org}</apigee.org>
-        <apigee.username>\${username}</apigee.username>
-        <apigee.password>\${password}</apigee.password>
-    </properties>
-</profile>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http:/git/maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>apigee</groupId>
+    <artifactId>apigee-deploy</artifactId>
+    <version>1.0</version>
+    <profiles>
+        <profile>
+            <id>test</id>
+            <properties>
+                <options>validate</options>
+                <apigee.profile>test</apigee.profile>
+                <apigee.hosturl>https://api.enterprise.apigee.com</apigee.hosturl>
+                <apigee.apiversion>v1</apigee.apiversion>
+                <apigee.org>\${org}</apigee.org>
+                <apigee.username>\${username}</apigee.username>
+                <apigee.password>\${password}</apigee.password>
+            </properties>
+        </profile>
+    </profiles>
+</project>
