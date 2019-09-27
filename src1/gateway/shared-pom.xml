@@ -3,6 +3,7 @@
     <groupId>apigee</groupId>
     <artifactId>parent-pom</artifactId>
     <version>1.0</version>
+    <packaging>pom</packaging>
     <profiles>
         <profile>
             <id>test</id>
